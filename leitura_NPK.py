@@ -54,7 +54,6 @@ try:
     print("Nitrogênio(N): {}mg/kg".format(nitrogênio))
     print("Fósforo(P): {}mg/kg".format(fósforo))
     print("Potássio(K): {}mg/kg".format(potássio))
-    print(data)
 
     # Definir o Slave ID
     novo_slave_id = 2
@@ -77,4 +76,4 @@ except minimalmodbus.CannotWriteToInstrument as e:
 except minimalmodbus.SerialException as e:
     print("Erro na comunicação serial:", str(e))
 except Exception as e:
-    print("Erro desconhecido:", str(e))s
+    print("Erro desconhecido:", str(e))
